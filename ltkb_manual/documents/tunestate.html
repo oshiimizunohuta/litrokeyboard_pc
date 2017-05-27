@@ -1,0 +1,280 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+</HEAD> 
+
+<BODY style=" background-color:#a0ffa0">
+
+
+<style>
+div{
+position:absolute;
+top:20;
+left:100;
+font-size:16px;
+}
+
+table, td, th { 
+border: 1px #204020 solid;
+text-align:center;
+} 
+
+</style>
+
+＊＊波形設定について＊＊<BR>
+<BR>
+<IMG SRC="png/tunewin.gif">
+<BR>
+ここで各パラメータを設定し、音の試聴ができます。<BR>
+上の画像右にオシロコープで波形を見たい場合、ＥＮＴＥＲを押してください。<BR>
+視聴は<A href="top.html#key" target="setu">鍵盤用のキー</A>を押してみましょう。<BR>
+各パラメータは矢印キーの左右で変更できます。<BR>
+ただし、ＰＬＡＹ（メニューについてを参照）中にＴＵＮＥＳＥＴデータ地点を通ると自動で変更されるので注意が必要です。<BR>
+<BR>
+<BR>
+<BR>
+＜ＶＬＭ＞<BR>
+音量を０～１６で調節します。<BR>
+<BR>
+<BR>
+＜ＡＴＴ＞<BR>
+ＶＬＭで設定した音量から徐々に小さくしていきます。<BR>
+ＧＩＮが設定されていた場合、音量が上がりきった後に発生します。<BR>
+<BR>パターン<BR>
+<TABLE>
+<TR style="background-color:#40a040">
+ <TD>値</TD><TD>値０の効果</TD><TD>それ以降</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>Ｎ００～Ｎ３Ｆ</TD><TD>変化無し</TD><TD>大きいほど早く減衰</TD>
+</TR>
+</TABLE>
+<BR><TABLE>
+<TR style="background-color:#40a040">
+ <TD>値</TD><TD>１ｘｘ</TD><TD>２ｘｘ</TD><TD>３ｘｘ</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＡｘ<BR>高速振動</TD><TD ROWSPAN="3">小幅振動</TD><TD ROWSPAN="3">中幅振動</TD><TD ROWSPAN="3">大幅振動</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＢｘ<BR>中速振動</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＣｘ<BR>低速振動</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＤｘ<BR>一定値まで減衰</TD><TD>微音なところまで</TD><TD>半分まで</TD><TD>あまり変化無い</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD COLSPAN="4">ｘｘ０：変化無し。ｘｘ１～ｘｘＦ：大きいほど早く減衰</TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+＜ＧＩＮ＞<BR>
+ＶＬＭで設定した音量まで徐々に大きくしていきます。<BR>
+０で変化無し。硬い音がします。<BR>
+設定次第でやわらかい音になると思います。<BR>
+パターン増やしてみたものの＜ＡＴＴ＞と違って、使い道がなさそうです・・・<BR>
+<BR>パターン<BR>
+<TABLE>
+<TR style="background-color:#40a040">
+ <TD>値</TD><TD>値０の効果</TD><TD>それ以降</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>Ｎ００～Ｎ３Ｆ</TD><TD>変化無し</TD><TD>大きいほど早く増幅</TD>
+</TR>
+</TABLE>
+<BR><TABLE>
+<TR style="background-color:#40a040">
+ <TD>値</TD><TD>１ｘｘ</TD><TD>２ｘｘ</TD><TD>３ｘｘ</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＡｘ<BR>高速振動</TD><TD ROWSPAN="3">小幅振動</TD><TD ROWSPAN="3">中幅振動</TD><TD ROWSPAN="3">大幅振動</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＢｘ<BR>中速振動</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＣｘ<BR>低速振動</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＤｘ<BR>極遅振動</TD><TD>微音なところまで</TD><TD>半分まで</TD><TD>あまり変化無い</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD COLSPAN="4">ｘｘ０：変化無し。ｘｘ１～ｘｘＦ：大きいほど早く増幅</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+＜ＤＣＨ＞<BR>
+波形（の位相）を少しづつずらしていきます。<BR>
+２ＣＨ同時発音で片方のＣＨに設定すると音に深みがでます。<BR>
+メロディーとしては、Ｂ００～Ｂ０Ｆ、Ａ００～Ａ０Ｆ<BR>
+効果音としては、Ｂ１０～Ｂ１Ｆ、Ａ１０～Ａ１Ｆ<BR>
+良いのではないかという最近の結論。<BR>
+<BR>パターン<BR>
+<TABLE>
+<TR>
+<TD>０００</TD><TD>変化無し</TD>
+</TR>
+<TR style="background-color:#40a040">
+<TD COLSPAN="2">＿＿＿＿</TD>
+</TR>
+<TR>
+<TD COLSPAN="2">Ｂｘｘ<BR>遅らせる</TD>
+</TR>
+<TR>
+<TD>ｘ０ｘ<BR>変動する間隔</TD><TD>ｘ１ｘ<BR>変動する量</TD>
+</TR>
+<TR style="background-color:#40a040">
+<TD COLSPAN="2">＿＿＿＿</TD>
+</TR>
+<TR>
+<TD COLSPAN="2">Ａｘｘ<BR>早まらせる</TD>
+</TR>
+<TR>
+<TD>ｘ０ｘ<BR>変動する間隔</TD><TD>ｘ１ｘ<BR>変動する量</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD COLSPAN="2">ｘｘ０～ｘｘＦ：大きい方が間隔が短い・変化量が多い</TD>
+</TR>
+</TABLE><BR>
+<BR>
+＜ＤＬＹ＞<BR>
+ＴＩＭＥ：１単位（約１６ｍｓ)で演奏を遅らせます。<BR>
+これも２ＣＨ同時発音で片方のＣＨに設定したりして使ったりします。<BR>
+ディレイデータのセットをするとき直前に音符データがある場合、その音が飛ばされる可能性があります。<BR>
+<BR>
+<BR>
+＜ＬＮＧ＞<BR>
+音の長さを変更します。値1に対し１６．７ｍＳ単位です。<BR>
+ノイズ音色を使用する場合と＜ＦＳ＞使用時は短い音は正確な長さで出せてません・・・<BR>
+<BR>
+<BR>
+＜ＴＹＰ＞<BR>
+波形の種類を変更します。
+
+ＴＹＰ・・・波形の種類<BR>
+<TABLE>
+<TR><TD colspan="5">矩形波</TD></TR>
+<TR><TD>００</TD><TD>０１</TD><TD>０２</TD><TD>０３</TD></TR>
+<TR>
+ <TD><IMG SRC="png/pls00.GIF"></TD><TD><IMG SRC="png/pls01.GIF"></TD><TD><IMG SRC="png/pls02.GIF"></TD><TD><IMG SRC="png/pls03.GIF"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE>
+<TR><TD colspan="5">半鋸（？）波</TD></TR>
+<TR><TD>０４</TD><TD>０５</TD><TD>０６</TD><TD>０７</TD></TR>
+<TR>
+ <TD><IMG SRC="png/nkg04.GIF"></TD><TD><IMG SRC="png/nkg05.GIF"></TD><TD><IMG SRC="png/nkg06.GIF"></TD><TD><IMG SRC="png/nkg07.GIF"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE>
+<TR><TD colspan="5">三角（階段）波</TD></TR>
+<TR><TD>０８</TD><TD>０９</TD><TD>１０</TD><TD>１１</TD></TR>
+<TR>
+ <TD><IMG SRC="png/tri08.GIF"></TD><TD>設定無し</TD><TD>設定無し</TD><TD>設定無し</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE>
+<TR><TD colspan="5">全鋸波</TD></TR>
+<TR><TD>１２</TD><TD>１３</TD><TD>１４</TD><TD>１５</TD></TR>
+<TR>
+ <TD><IMG SRC="png/nkg12.GIF"></TD><TD>設定無し</TD><TD>設定無し</TD><TD>設定無し</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE>
+<TR><TD colspan="5">ノイズ</TD></TR>
+<TR><TD>１６</TD><TD>１７</TD><TD>１８</TD><TD>１９</TD></TR>
+<TR>
+ <TD><IMG SRC="png/niz16.GIF"></TD><TD>１６の周期の２倍</TD><TD>１６の周期の４倍</TD><TD>１６の周期の３２倍</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+＜ＦＳ＞（Ｖｅｒ１．１１１までは＜ＦＭＳ＞）<BR>
+時間ごとに周波数を変化させていきます。<BR>
+（Ｖｅｒ１．１１１まで波長１周ごとに周波数を変動させていきます。）<BR>
+数字は１から４まで変化し、高いほど一度に変動する周波数が大きくなります。<BR>
+矢印キーの右を押していくと高周波、<BR>
+左を押すと低周波へ変動。（アルファベットが逆さに表示されます。）<BR>
+<BR>パターン<BR>
+<TABLE>
+<TR style="background-color:#40a040">
+ <TD>値</TD><TD>１ｘｘ</TD><TD>２ｘｘ</TD><TD>３ｘｘ</TD><TD>４ｘｘ</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＡｘ<BR>等速変化</TD><TD>微量な変化</TD><TD>低速変化</TD><TD>高速速変化</TD><TD>瞬間</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD COLSPAN="5">ｘＢｘ<BR>未設定</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＣｘ<BR>ビブラート</TD><TD>微量な振動</TD><TD>少量な振動</TD><TD>中量な振動</TD><TD>多量な振動</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD COLSPAN="5">ｘＤｘ<BR>未設定</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＥｘ<BR>振動＆変化</TD><TD>微量な振動＆中速な変化</TD><TD>少量な振動＆高速な変化</TD><TD>中量な振動＆瞬間</TD><TD>多量な振動＆瞬間</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD COLSPAN="5">０００：変化無し。ｘｘ１～ｘｘ４：大きいほど早く変化</TD>
+</TR>
+</TABLE><BR>
+<BR>
+<BR>
+＜ＰＷＳ＞<BR>
+時間ごとに波形幅上下比を変化させていきます。<BR>
+アルファベットはＡでの設定のみ作ってあります。<BR>
+Ｂ以降は後の仕様変更のときの空きなので使用は控えて下さい。<BR>
+周期がＡは遅くＧでは早くなります。<BR>
+数字は１から４まで変化します。（下記パターン表を参照）<BR>
+矢印キーの右を押していくと波形幅上の比が大きくなる<BR>
+左を押すと波形幅上の比が小さくなる方向へ変化していきます。<BR>
+<BR>パターン<BR>
+<TABLE>
+<TR style="background-color:#40a040">
+ <TD>値</TD><TD>１ｘｘ</TD><TD>２ｘｘ</TD><TD>３ｘｘ</TD><TD>４ｘｘ</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＡｘ<BR>等速変化</TD><TD>極荒い変化</TD><TD>荒い変化</TD><TD>細かい変化</TD><TD>極細かい変化</TD>
+</TR>
+
+<TR style="background-color:#40a040">
+ <TD COLSPAN="5">０００：変化無し。ｘｘ１～ｘｘ４：大きいほど早く変化</TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+＜ＲＦＳ＞<BR>
+波形の立ち上がり立下りを変化させ（歪ませ）ます。<BR>
+数字は１から４まで変化します。（下記パターン表を参照）<BR>
+アルファベットが逆さでも効果は変わらないみたいです。<BR>
+<BR>パターン<BR>
+<TABLE>
+<TR style="background-color:#40a040">
+ <TD>値</TD><TD>１ｘｘ</TD><TD>２ｘｘ</TD><TD>３ｘｘ</TD><TD>４ｘｘ</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD>ｘＡｘ<BR>等速変化</TD><TD>微変化</TD><TD>少変化</TD><TD>中変化</TD><TD>多変化</TD>
+</TR>
+<TR style="background-color:#40a040">
+ <TD COLSPAN="5">０００：変化無し。ｘｘ４：固定（波形が台形）。ｘｘ１～ｘｘ３：大きいほどゆっくり変化。</TD>
+</TR>
+</TABLE><BR>
+<BR>
+<BR><BR>
+
+※組み合わせで実際にどんな音が鳴るのか予想するのは<BR>
+　難しいので（パターンの表現もあいまい過ぎるし）<BR>
+　少し面倒ですが、いろいろ試してみましょう。<BR>
+</BODY>
+
+
+</HTML>
